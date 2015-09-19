@@ -9,6 +9,7 @@
          2. Entering new student details.
          3. Display the details of students (in a Grid) who belong to a particular course.
          4. Display the details the students who have taken admission in a particular year.
+<<<<<<< HEAD
 
     - Blood Bank Windows Application.
        2.  	Consider the Database BLOODBANK consisting of following tables: tbl_BloodGroup (
@@ -31,5 +32,7 @@
    - Library Windows Application.
    - Education Institution Web Application.
    - Bank Web Application.
+=======
+>>>>>>> origin/master
 
-*Tools : Microsoft Visual C# Express 2010,SQLServer 2008 Express.*
+*Tools : Microsoft Visual studio 2010.*
