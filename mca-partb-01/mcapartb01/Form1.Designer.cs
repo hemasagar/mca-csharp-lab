@@ -103,7 +103,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = ".Net Lab Part-B 01";
             this.ResumeLayout(false);
             this.PerformLayout();
 

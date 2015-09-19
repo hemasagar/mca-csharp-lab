@@ -1,0 +1,13 @@
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\bin\Debug\mcapartb01.exe
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\bin\Debug\mcapartb01.pdb
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\obj\x86\Debug\mcapartb01.Form1.resources
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\obj\x86\Debug\mcapartb01.Form2.resources
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\obj\x86\Debug\mcapartb01.Properties.Resources.resources
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\obj\x86\Debug\mcapartb01.csproj.GenerateResource.Cache
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\obj\x86\Debug\mcapartb01.exe
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\obj\x86\Debug\mcapartb01.pdb
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\bin\Debug\mcapartb01.exe.config
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\obj\x86\Debug\mcapartb01.csprojResolveAssemblyReference.cache
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\bin\Debug\Student.mdf
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\bin\Debug\Student_log.ldf
+C:\Users\toktok\Documents\Visual Studio 2010\Projects\mca-partb-01\mcapartb01\obj\x86\Debug\mcapartb01.Form3.resources

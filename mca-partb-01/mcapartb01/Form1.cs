@@ -14,11 +14,9 @@ namespace mcapartb01
         public Form1()
         {
             InitializeComponent();
-            //this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-           this.MaximizeBox = false;
-           this.MinimizeBox = true;
-           //this.CancelButton = false;
-            
+            //this.MaximizeBox = false;   //Little cosmetic changes to prevent user from maximizing, alternatively can be done in properties window too.
+            //this.MinimizeBox = true;
+            this.ControlBox = false;      //This property overrides the above no controlbox is displayed at all.  
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -32,20 +30,14 @@ namespace mcapartb01
             {
                 this.Hide();
                 Form2 form2 = new Form2();
-                
                 form2.Show();
-                //this.Close();
-
-                form2.FormClosed += new FormClosedEventHandler(childFormClosed);
+                form2.FormClosed += new FormClosedEventHandler(childFormClosed); //Used to detect when the another form is closed.
             }
             else if (displayRadio.Checked)
             {
                 this.Hide();
                 Form3 form3 = new Form3();
-
                 form3.Show();
-                //this.Close();
-
                 form3.FormClosed += new FormClosedEventHandler(childFormClosed);
             }
             else
@@ -54,6 +46,7 @@ namespace mcapartb01
             }
         }
 
+        //When child form is closed again open parent form.
         void childFormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();

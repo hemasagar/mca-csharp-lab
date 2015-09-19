@@ -42,7 +42,7 @@
             this.studentAddPanel = new System.Windows.Forms.Panel();
             this.studentPanelCancelBtn = new System.Windows.Forms.Button();
             this.studentPanelSubmitBtn = new System.Windows.Forms.Button();
-            this.YrOfAdmin = new System.Windows.Forms.TextBox();
+            this.YrOfAdmsn = new System.Windows.Forms.TextBox();
             this.CourseID2 = new System.Windows.Forms.TextBox();
             this.Address = new System.Windows.Forms.TextBox();
             this.StudName = new System.Windows.Forms.TextBox();
@@ -174,7 +174,7 @@
             // 
             this.studentAddPanel.Controls.Add(this.studentPanelCancelBtn);
             this.studentAddPanel.Controls.Add(this.studentPanelSubmitBtn);
-            this.studentAddPanel.Controls.Add(this.YrOfAdmin);
+            this.studentAddPanel.Controls.Add(this.YrOfAdmsn);
             this.studentAddPanel.Controls.Add(this.CourseID2);
             this.studentAddPanel.Controls.Add(this.Address);
             this.studentAddPanel.Controls.Add(this.StudName);
@@ -210,13 +210,14 @@
             this.studentPanelSubmitBtn.TabIndex = 11;
             this.studentPanelSubmitBtn.Text = "Submit";
             this.studentPanelSubmitBtn.UseVisualStyleBackColor = true;
+            this.studentPanelSubmitBtn.Click += new System.EventHandler(this.studentPanelSubmitBtn_Click);
             // 
-            // YrOfAdmin
+            // YrOfAdmsn
             // 
-            this.YrOfAdmin.Location = new System.Drawing.Point(203, 308);
-            this.YrOfAdmin.Name = "YrOfAdmin";
-            this.YrOfAdmin.Size = new System.Drawing.Size(177, 20);
-            this.YrOfAdmin.TabIndex = 10;
+            this.YrOfAdmsn.Location = new System.Drawing.Point(203, 308);
+            this.YrOfAdmsn.Name = "YrOfAdmsn";
+            this.YrOfAdmsn.Size = new System.Drawing.Size(177, 20);
+            this.YrOfAdmsn.TabIndex = 10;
             // 
             // CourseID2
             // 
@@ -263,9 +264,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(77, 252);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(60, 20);
+            this.label10.Size = new System.Drawing.Size(81, 20);
             this.label10.TabIndex = 4;
-            this.label10.Text = "Course";
+            this.label10.Text = "Course ID";
             // 
             // label9
             // 
@@ -317,8 +318,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.courseAddPanel);
             this.Controls.Add(this.studentAddPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = ".Net Lab Part-B 01";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.courseAddPanel.ResumeLayout(false);
             this.courseAddPanel.PerformLayout();
             this.studentAddPanel.ResumeLayout(false);
@@ -348,7 +351,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox YrOfAdmin;
+        private System.Windows.Forms.TextBox YrOfAdmsn;
         private System.Windows.Forms.TextBox CourseID2;
         private System.Windows.Forms.TextBox Address;
         private System.Windows.Forms.TextBox StudName;
