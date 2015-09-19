@@ -1,9 +1,11 @@
 ﻿/* 
  * FileName: Form3.Designer.cs
  * Author:  Hemasagar
- * email:   toktok420@gmail.com
+ * Course:  MCA
+ * College: Bangalore Institute Of Technology
+ * Email:   toktok420@gmail.com
  */
-namespace mcapartb01
+namespace mca_partb_02
 {
     partial class Form3
     {
@@ -35,8 +37,9 @@ namespace mcapartb01
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.yrOfAdmsnRadio = new System.Windows.Forms.RadioButton();
-            this.courseRadio = new System.Windows.Forms.RadioButton();
+            this.customResultRadio = new System.Windows.Forms.RadioButton();
+            this.genderRadio = new System.Windows.Forms.RadioButton();
+            this.bloodGroupRadio = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.detailsPanel = new System.Windows.Forms.Panel();
             this.detailsListBox = new System.Windows.Forms.ListBox();
@@ -51,59 +54,70 @@ namespace mcapartb01
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(268, 21);
+            this.label1.Location = new System.Drawing.Point(317, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 31);
+            this.label1.Size = new System.Drawing.Size(340, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Student Details Display";
+            this.label1.Text = "Blood Bank Details Display";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.yrOfAdmsnRadio);
-            this.panel1.Controls.Add(this.courseRadio);
+            this.panel1.Controls.Add(this.customResultRadio);
+            this.panel1.Controls.Add(this.genderRadio);
+            this.panel1.Controls.Add(this.bloodGroupRadio);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(86, 65);
+            this.panel1.Location = new System.Drawing.Point(183, 69);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(607, 81);
+            this.panel1.Size = new System.Drawing.Size(608, 66);
             this.panel1.TabIndex = 1;
             // 
-            // yrOfAdmsnRadio
+            // customResultRadio
             // 
-            this.yrOfAdmsnRadio.AutoSize = true;
-            this.yrOfAdmsnRadio.Location = new System.Drawing.Point(400, 47);
-            this.yrOfAdmsnRadio.Name = "yrOfAdmsnRadio";
-            this.yrOfAdmsnRadio.Size = new System.Drawing.Size(108, 17);
-            this.yrOfAdmsnRadio.TabIndex = 2;
-            this.yrOfAdmsnRadio.Text = "Year of admission";
-            this.yrOfAdmsnRadio.UseVisualStyleBackColor = true;
+            this.customResultRadio.AutoSize = true;
+            this.customResultRadio.Location = new System.Drawing.Point(314, 37);
+            this.customResultRadio.Name = "customResultRadio";
+            this.customResultRadio.Size = new System.Drawing.Size(201, 17);
+            this.customResultRadio.TabIndex = 3;
+            this.customResultRadio.Text = "Age >18 ,weight > 45 Kg and Gender";
+            this.customResultRadio.UseVisualStyleBackColor = true;
             // 
-            // courseRadio
+            // genderRadio
             // 
-            this.courseRadio.AutoSize = true;
-            this.courseRadio.Location = new System.Drawing.Point(157, 47);
-            this.courseRadio.Name = "courseRadio";
-            this.courseRadio.Size = new System.Drawing.Size(91, 17);
-            this.courseRadio.TabIndex = 1;
-            this.courseRadio.Text = "Course Based";
-            this.courseRadio.UseVisualStyleBackColor = true;
+            this.genderRadio.AutoSize = true;
+            this.genderRadio.Location = new System.Drawing.Point(218, 37);
+            this.genderRadio.Name = "genderRadio";
+            this.genderRadio.Size = new System.Drawing.Size(60, 17);
+            this.genderRadio.TabIndex = 2;
+            this.genderRadio.Text = "Gender";
+            this.genderRadio.UseVisualStyleBackColor = true;
+            // 
+            // bloodGroupRadio
+            // 
+            this.bloodGroupRadio.AutoSize = true;
+            this.bloodGroupRadio.Location = new System.Drawing.Point(94, 37);
+            this.bloodGroupRadio.Name = "bloodGroupRadio";
+            this.bloodGroupRadio.Size = new System.Drawing.Size(84, 17);
+            this.bloodGroupRadio.TabIndex = 1;
+            this.bloodGroupRadio.Text = "Blood Group";
+            this.bloodGroupRadio.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(142, 12);
+            this.label2.Location = new System.Drawing.Point(154, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(366, 20);
+            this.label2.Size = new System.Drawing.Size(285, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Select the criteria based on which to display details";
+            this.label2.Text = "Select based on which to display result.\r\n";
             // 
             // detailsPanel
             // 
             this.detailsPanel.Controls.Add(this.detailsListBox);
             this.detailsPanel.Controls.Add(this.label3);
-            this.detailsPanel.Location = new System.Drawing.Point(12, 152);
+            this.detailsPanel.Location = new System.Drawing.Point(30, 123);
             this.detailsPanel.Name = "detailsPanel";
-            this.detailsPanel.Size = new System.Drawing.Size(200, 349);
+            this.detailsPanel.Size = new System.Drawing.Size(153, 258);
             this.detailsPanel.TabIndex = 2;
             // 
             // detailsListBox
@@ -111,41 +125,40 @@ namespace mcapartb01
             this.detailsListBox.FormattingEnabled = true;
             this.detailsListBox.Location = new System.Drawing.Point(15, 37);
             this.detailsListBox.Name = "detailsListBox";
-            this.detailsListBox.Size = new System.Drawing.Size(167, 303);
-            this.detailsListBox.TabIndex = 4;
+            this.detailsListBox.Size = new System.Drawing.Size(120, 212);
+            this.detailsListBox.TabIndex = 1;
             this.detailsListBox.SelectedIndexChanged += new System.EventHandler(this.detailsListBox_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 10);
+            this.label3.Location = new System.Drawing.Point(12, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Select from the below list";
+            this.label3.Size = new System.Drawing.Size(123, 15);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Select from below list";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(232, 189);
+            this.dataGridView1.Location = new System.Drawing.Point(189, 160);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(546, 303);
+            this.dataGridView1.Size = new System.Drawing.Size(774, 212);
             this.dataGridView1.TabIndex = 3;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 513);
+            this.ClientSize = new System.Drawing.Size(975, 504);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.detailsPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
             this.Name = "Form3";
-            this.Text = ".Net Lab Part-B 01";
+            this.Text = ".Net Lab part-B 02";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -161,12 +174,13 @@ namespace mcapartb01
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton courseRadio;
+        private System.Windows.Forms.RadioButton customResultRadio;
+        private System.Windows.Forms.RadioButton genderRadio;
+        private System.Windows.Forms.RadioButton bloodGroupRadio;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton yrOfAdmsnRadio;
         private System.Windows.Forms.Panel detailsPanel;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox detailsListBox;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

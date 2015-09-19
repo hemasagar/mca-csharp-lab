@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* 
+ * FileName: Form2.cs
+ * Author:  Hemasagar
+ * Email:   toktok420@gmail.com
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,45 +24,25 @@ namespace mcapartb01
             InitializeComponent();
             this.MaximizeBox = false;
             this.MinimizeBox = true;
-            courseAddPanel.Hide();
-            studentAddPanel.Hide();
         }
 
-        private void addCombo_SelectedIndexChanged(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
-            if (addCombo.Text == "New Course")
-            {
-                studentAddPanel.Hide();
-                courseAddPanel.Show();
-            }
-            else if (addCombo.Text == "New Student")
-            {
-                courseAddPanel.Hide();
-                studentAddPanel.Show();
-            }
-            else
-            {
-                MessageBox.Show("An Error Occurred Please reselect");
-            }
+            cmd.Connection = conn;
         }
 
-        private void studentPanelCancelBtn_Click(object sender, EventArgs e)
-        {
-            studentAddPanel.Hide();
-        }
-
-        private void coursePanelSubmitBtn_Click(object sender, EventArgs e)
+        private void courseTabSubmitBtn_Click(object sender, EventArgs e)
         {
             try
             {
-                if (CourseID1.Text == "" || CourseName.Text == "")
+                if (CourseID1Txt.Text == "" || CourseNameTxt.Text == "")
                 {
                     MessageBox.Show("Course Id or CourseName is empty please fill up", "Error");
                 }
                 else
                 {
                     conn.Open();
-                    cmd.CommandText = "insert into tbl_Course(CourseId,CourseName) values('" + CourseID1.Text + "','" + CourseName.Text + "')";
+                    cmd.CommandText = "insert into tbl_Course(CourseId,CourseName) values('" + CourseID1Txt.Text + "','" + CourseNameTxt.Text + "')";
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Record inserted SuccessFully");
                 }
@@ -68,31 +53,25 @@ namespace mcapartb01
             }
             finally
             {
-                CourseID1.Text = "";
-                CourseName.Text = "";
+                resetTextBoxes();
                 conn.Close();
             }
          }
 
-        private void coursePanelCancelBtn_Click(object sender, EventArgs e)
-        {
-            courseAddPanel.Hide();
-        }
-
-        private void studentPanelSubmitBtn_Click(object sender, EventArgs e)
+        private void studentTabSubmitBtn_Click(object sender, EventArgs e)
         {
             try
             {
-                if (USN.Text == "" || StudName.Text == "" || Address.Text == "" || CourseID2.Text == "" || YrOfAdmsn.Text == "")
+                if (USNTxt.Text == "" || StudNameTxt.Text == "" || AddressTxt.Text == "" || CourseID2Txt.Text == "" || YrOfAdmsnTxt.Text == "")
                 {
                     MessageBox.Show("please fill up all the fields", "Error");
                 }
                 else
                 {
                     conn.Open();
-                    cmd.CommandText = "insert into tbl_Student(USN,StudName,Address,CourseID,YrOfAdmsn) values ('" + USN.Text + "','" + StudName.Text + "','" + Address.Text + "','" + CourseID2.Text + "','" + YrOfAdmsn.Text + "')";
+                    cmd.CommandText = "insert into tbl_Student(USN,StudName,Address,CourseID,YrOfAdmsn) values ('" + USNTxt.Text + "','" + StudNameTxt.Text + "','" + AddressTxt.Text + "','" + CourseID2Txt.Text + "','" + YrOfAdmsnTxt.Text + "')";
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Record inserted successfully");                    
+                    MessageBox.Show("Record inserted successfully");
                 }
             }
             catch (Exception ex)
@@ -101,18 +80,30 @@ namespace mcapartb01
             }
             finally
             {
-                USN.Text = "";
-                StudName.Text = "";
-                Address.Text = "";
-                CourseID2.Text = "";
-                YrOfAdmsn.Text = "";
+                resetTextBoxes();
                 conn.Close();
             }
-         }
+        }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void courseTabResetBtn_Click(object sender, EventArgs e)
         {
-            cmd.Connection = conn;
+            resetTextBoxes();
+        }
+
+        private void studentTabCancelBtn_Click(object sender, EventArgs e)
+        {
+            resetTextBoxes();
+        }
+
+        private void resetTextBoxes()
+        {
+            CourseID1Txt.Text = "";
+            CourseNameTxt.Text = "";
+            USNTxt.Text = "";
+            StudNameTxt.Text = "";
+            AddressTxt.Text = "";
+            CourseID2Txt.Text = "";
+            YrOfAdmsnTxt.Text = "";
         }
     }
 }
