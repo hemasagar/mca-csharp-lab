@@ -1,6 +1,8 @@
 ﻿/* 
  * FileName: Form2.cs
  * Author:  Hemasagar
+ * Course:  MCA
+ * College: Bangalore Institute Of Technology
  * Email:   toktok420@gmail.com
  */
 using System;

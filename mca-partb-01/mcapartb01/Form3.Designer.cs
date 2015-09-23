@@ -1,7 +1,9 @@
 ﻿/* 
  * FileName: Form3.Designer.cs
  * Author:  Hemasagar
- * email:   toktok420@gmail.com
+ * Course:  MCA
+ * College: Bangalore Institute Of Technology
+ * Email:   toktok420@gmail.com
  */
 namespace mcapartb01
 {
