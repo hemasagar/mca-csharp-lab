@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            font-size: large;
+        }
+        .style3
+        {
+            font-size: x-large;
+        }
+        .style4
+        {
+            font-size: medium;
+        }
+        .style5
+        {
+            color: #006600;
+        }
+        .style6
+        {
+            font-size: x-large;
+            color: #663300;
+        }
+        .style7
+        {
+            color: #663300;
+        }
+        .style8
+        {
+            color: #444957;
+        }
+        .style9
+        {
+            color: #444957;
+            margin-left:170px;
+            margin-top:-200px;
+            padding:5px;     
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="font-weight: 700; font-size: xx-large; text-align: center">
+    <br />
+            <asp:Image ID="Image1" runat="server" Height="135px" ImageUrl="bitlogo.png" 
+                Width="159px" />
+            <br />
+            <span class="style7">Bangalore Institute of Technology</span>
+        <br />
+        <span class="style2"><span class="style8">#10,VVPuram,Bengaluru-560003</span><br />
+        </span>
+        <br />
+        <div style="font-weight:200;text-align:left">
+        
+            <ul>
+                <li>
+                    <span class="style6"><a href="Default.aspx"><span class="style7">Home</span></a></span>
+                </li>
+                <li style="width: 129px">
+                    <span class="style6">Departments</span>
+                    <ul>
+                        <li class="style4"><a href="mca.aspx"><span class="style5">MCA</span></a></li>
+                        <li class="style4"><a href="engec.aspx"><span class="style5">BE-EC</span></a></li>
+                    </ul>
+                </li>
+                
+                <li style="width: 127px">
+                   <span class="style6">Facilities</span>
+                    <ul>
+                        <li class="style4"><a href="hostel.aspx"><span class="style5">Hostel</span></a></li>
+                        <li class="style4"><a href="library.aspx"><span class="style5">Library</span></a></li>
+                    </ul>
+                </li>
+                <li style="width: 123px">
+                    <span class="style3"><a href="feedback.aspx"><span class="style7">Feedback</span></a></span>
+                </li>
+            </ul>
+        </div>
+        <div class="style9">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+             </asp:ContentPlaceHolder>
+        </div>
+    </div> 
+    </form>
+    
+</body>
+</html>
